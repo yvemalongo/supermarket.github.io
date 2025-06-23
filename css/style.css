@@ -304,3 +304,38 @@ body{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+
+
+<style>
+  #topbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap; /* important pour que les éléments aillent à la ligne si besoin */
+    padding: 10px;
+  }
+
+  #topbar img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  #topbar h1 {
+    font-size: 1.2rem;
+    color: blue;
+  }
+
+  @media (max-width: 600px) {
+    #topbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #topbar h1 {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  }
+</style>

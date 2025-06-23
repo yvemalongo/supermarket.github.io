@@ -16,7 +16,66 @@
     <link href="./vendor/fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet"> 
 
     <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+    
     <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important pour le responsive -->
+  <style>
+    /* Style du topbar */
+    #topbar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap; /* pour s'adapter sur mobile */
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    #topbar img {
+      max-width: 80px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    #topbar h1 {
+      font-size: 1.5rem;
+      color: #007BFF; /* Bleu */
+      margin: 0;
+    }
+
+    /* Adaptation sur petit écran (mobile) */
+    @media (max-width: 600px) {
+      #topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #topbar img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      #topbar h1 {
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+    
 </head>
 
 <body>
